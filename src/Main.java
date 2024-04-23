@@ -6,7 +6,9 @@ public class Main {
 
         for (int i = 0; i < letter.length; i++) {
             for (int j = 0; j < letter[i].length; j++) {
-                if (i == 0 || i == 3) {
+                if (i == 3 && j == 3) {
+                    letter[i][j] = "";
+                } else if (i == 0 || i == 3) {
                     letter[i][j] = " B ";
                 } else if (i == 6) {
                     letter[i][j] = " B ";
